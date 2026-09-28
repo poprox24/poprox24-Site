@@ -1,457 +1,463 @@
-				</div>
+</div>
 
 <!DOCTYPE HTML>
 <html lang="en">
-	<head>
-		<script src="/.nekoweb-api/static/site.js" defer></script>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-		<meta content="Poprox Systems™ Terms of Service" property="og:title" />
-		<meta
-			content="Terms of Service for the usage of the Poprox unit, by reading this you agree to the usage of the service. "
-			property="og:description"
-		/>
-		<meta content="https://poprox.nekoweb.org/tos" property="og:url" />
-		<meta
-			content="https://poprox.nekoweb.org/data/pfp2_280w.webp"
-			property="og:image"
-		/>
-		<meta content="#E68FAC" data-react-helmet="true" name="theme-color" />
+<head>
+	<script src="/.nekoweb-api/static/site.js" defer></script>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
 
-		<link rel="canonical" href="https://poprox.nekoweb.org/tos">
+	<meta content="Poprox Systems™ Terms of Service" property="og:title" />
+	<meta
+		content="Terms of Service for the usage of the Poprox unit, by reading this you agree to the usage of the service. "
+		property="og:description" />
+	<meta content="https://poprox24.stream/tos" property="og:url" />
+	<meta content="https://poprox24.stream/data/pfp2_280w.webp" property="og:image" />
+	<meta content="#E68FAC" data-react-helmet="true" name="theme-color" />
 
-		<title>Poprox Systems™ - User Agreement v3.6</title>
-		<!-- pixel display font for h1 only, keeps Inter for everything else -->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
-			rel="stylesheet"
-		/>
+	<link rel="canonical" href="https://poprox24.stream/tos">
 
-		<link href="inter.css" rel="stylesheet" />
-		<link href="tos.css" rel="stylesheet" />
-		
-		<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-	</head>
-	<body>
-		<div class="particles" aria-hidden="true">
-			<div class="particle p2">🍋</div>
-			<div class="particle p3">🍋</div>
-			<div class="particle p4">🍋</div>
+	<title>Poprox Systems™ - User Agreement v3.6</title>
+	<!-- pixel display font for h1 only, keeps Inter for everything else -->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+	<link href="inter.css" rel="stylesheet" />
+	<link href="tos.css" rel="stylesheet" />
+
+	<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+	<div class="particles" aria-hidden="true">
+		<div class="particle p2">🍋</div>
+		<div class="particle p3">🍋</div>
+		<div class="particle p4">🍋</div>
+	</div>
+
+	<button class="back-button" onclick="window.location.href='https://poprox24.stream/';">
+		← Back
+	</button>
+
+	<div id="commentBtn" class="comment-button" role="button" aria-label="Chat">
+		<div class="cb-icon">
+			<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+				stroke-linejoin="round">
+				<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+			</svg>
 		</div>
 
-		<button
-			class="back-button"
-			onclick="window.location.href='https://poprox.nekoweb.org';"
-		>
-			← Back
-		</button>
-		
-		<div id="commentBtn" class="comment-button" role="button" aria-label="Chat">
-			<div class="cb-icon">
-				<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+		<div id="viewChat" class="cb-container">
+			<div class="cb-header">
+				<div class="cb-title">Comments :3</div>
+				<button id="cbClose" class="cb-close-btn">×</button>
 			</div>
 
-			<div id="viewChat" class="cb-container">
-				<div class="cb-header">
-					<div class="cb-title">Comments :3</div>
-					<button id="cbClose" class="cb-close-btn">×</button>
-				</div>
-				
-				<div id="commentsList" class="cb-content"></div>
+			<div id="commentsList" class="cb-content"></div>
 
-				<div class="cb-footer">
-					<input id="msgInput" class="chat-input" type="text" placeholder="Type a message..." />
-					<button id="sendBtn" class="chat-send" aria-label="Send message">
-						<svg viewBox="0 0 24 24"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path></svg>
-					</button>
-				</div>
+			<div class="cb-footer">
+				<input id="msgInput" class="chat-input" type="text" placeholder="Type a message..." />
+				<button id="sendBtn" class="chat-send" aria-label="Send message">
+					<svg viewBox="0 0 24 24">
+						<path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"></path>
+					</svg>
+				</button>
 			</div>
 		</div>
+	</div>
 
-		<div class="wrap">
-			<header>
-				<div class="logo">
-					<img
-						class="logo"
-						src="data/pfp_60w.webp"
-						srcset="data/pfp_112w.webp 112w, data/pfp_60w.webp 60w"
-						alt="logo"
-						style="width:64px;height:64px;border-radius:10px;"
-						oncontextmenu="return false;"
-					/>
+	<div class="wrap">
+		<header>
+			<div class="logo">
+				<img class="logo" src="data/pfp_60w.webp" srcset="data/pfp_112w.webp 112w, data/pfp_60w.webp 60w"
+					alt="logo" style="width:64px;height:64px;border-radius:10px;" oncontextmenu="return false;" />
+			</div>
+			<div>
+				<h1>Poprox Systems™ — User Agreement v3.6</h1>
+				<div class="subtitle">
+					(auto-updates whenever I feel like it)
 				</div>
-				<div>
-					<h1>Poprox Systems™ — User Agreement v3.6</h1>
-					<div class="subtitle">
-						(auto-updates whenever I feel like it)
-					</div>
+			</div>
+		</header>
+
+		<main class="card" id="doc">
+			<div class="meta">
+				<div class="pill">pseudo-legal • kinda dumb</div>
+				<div class="pill">
+					must be
+					<strong>18+</strong>
 				</div>
-			</header>
-
-			<main class="card" id="doc">
-				<div class="meta">
-					<div class="pill">pseudo-legal • kinda dumb</div>
-					<div class="pill">
-						must be
-						<strong>18+</strong>
-					</div>
-					<div class="pill">
-						discord:
-						<strong>poprox24</strong>
-					</div>
+				<div class="pill">
+					discord:
+					<strong>poprox24</strong>
 				</div>
-				
-				<section class="card-section">
-					<h2>Intro</h2>
-					<p>
-						Welcome to the official Terms of Service for
-						<strong>Poprox</strong>
-						(hereafter referred to as "me," "the UNIT," "your
-						problem," or "Mika"). By being here you consent to the
-						terms, subterms, and all unspoken minor psychic
-						contracts that form when two people share memes at 2AM.
-						You must be
-						<strong>18+</strong>
-						and at least partially unhinged to proceed.
-					</p>
+			</div>
 
-					<p>
-						<strong>
-							The UNIT comes pre-programmed with these traits:
-						</strong>
-					</p>
+			<section class="card-section">
+				<h2>Intro</h2>
+				<p>
+					Welcome to the official Terms of Service for
+					<strong>Poprox</strong>
+					(hereafter referred to as "me," "the UNIT," "your
+					problem," or "Mika"). By being here you consent to the
+					terms, subterms, and all unspoken minor psychic
+					contracts that form when two people share memes at 2AM.
+					You must be
+					<strong>18+</strong>
+					and at least partially unhinged to proceed.
+				</p>
 
-					<ul>
-						<li>+20 Feelings resistance</li>
-						<li>+15 Logic</li>
-						<li>+10 Tinkering skills</li>
-					</ul>
-				</section>
+				<p>
+					<strong>
+						The UNIT comes pre-programmed with these traits:
+					</strong>
+				</p>
 
-				<section class="card-section">
-					<h2>Activating the UNIT</h2>
-					<p>
-						The UNIT should come pre-activated and ready to cause
-						chaos. In the case your UNIT has not been activated,
-						please complete the following:
-					</p>
-					<ol>
-						<li>Place the UNIT in a quiet room.</li>
-						<li>
-							Point out
-							<strong>1-3</strong>
-							problems you do not understand.
-						</li>
-						<li>
-							<strong>Wait</strong>
-							30 seconds.
-						</li>
-						<li>
-							If your UNIT is not activated after 30 seconds, try
-							asking it to "Open up more emotionally"
-							<br />
-							- This will immediately activate
-							<strong>Flight Mode (NOT RECOMMENDED)</strong>
-						</li>
-					</ol>
-				</section>
+				<ul>
+					<li>+20 Feelings resistance</li>
+					<li>+15 Logic</li>
+					<li>+10 Tinkering skills</li>
+				</ul>
+			</section>
 
-				<section class="card-section">
-					<h2>General Handling</h2>
-					<p>
-						Keep UNIT
-						<strong>warm.</strong>
-						Hoodie temperatures are ideal, extremes will cause
-						snarky shutdowns. Hydration is mandatory - water,
-						caffeine, or something fizzy. Alcohol is always allowed
-						unless UNIT declines; it voids warranty otherwise. Do
-						not attempt to "clean" Poprox with large appliances,
-						dramatic confrontations, or forced advice. Hand-wash
-						metaphors and be gentle with feelings. If you give the
-						UNIT rules to follow, you should explain why they are in
-						place. You should also expect the UNIT not to follow
-						insane rules.
-					</p>
-					<p>The UNIT gets along with most other units, but will only get close to those who respect its freedom.</p>
-					<p>It is important to <strong>follow these rules:</strong></p>
-					<ul>
-						<li>
-							Do not put the UNIT into an enclosed area with low stimulation, it will break out and never return.
-						</li>
-						<li>
-							Play with your UNIT frequently and give it a lot of free space in order to strengthen its bond with you
-						</li>
-						<li>
-							Do not attempt to invoke a <strong>permanent bond</strong> with the UNIT too fast, it will get scared, run away and never return.
-						</li>
-					</ul>
-				</section>
+			<section class="card-section">
+				<h2>Activating the UNIT</h2>
+				<p>
+					The UNIT should come pre-activated and ready to cause
+					chaos. In the case your UNIT has not been activated,
+					please complete the following:
+				</p>
+				<ol>
+					<li>Place the UNIT in a quiet room.</li>
+					<li>
+						Point out
+						<strong>1-3</strong>
+						problems you do not understand.
+					</li>
+					<li>
+						<strong>Wait</strong>
+						30 seconds.
+					</li>
+					<li>
+						If your UNIT is not activated after 30 seconds, try
+						asking it to "Open up more emotionally"
+						<br />
+						- This will immediately activate
+						<strong>Flight Mode (NOT RECOMMENDED)</strong>
+					</li>
+				</ol>
+			</section>
 
-				<section class="card-section">
-					<h2>Feeding Protocol</h2>
-					<p>
-						Required nutrients: <strong>sugar</strong> (preferably disguised as
-						dessert), <strong>caffeine</strong> (strong enough to make your ancestors
-						blink), background affection, and a steady supply of
-						low-level <strong>chaos</strong>. The unit functions poorly with rigid
-						meal plans; randomized snack schedules keyed to vibe
-						changes are preferred.
-					</p>
-					<p><strong>§ Clause 4.2.0:</strong></p>
-					<ul>
-						<li>Mika may refuse any request made before caffeine intake, unless submitted in triplicate and accompanied by a meme of acceptable quality.</li>
-					</ul>
-					<p><strong>§ Clause 6.9:</strong></p>
-					<ul>
-						<li>All affection is subject to cooldowns, unless superseded by cuddle emergencies.</li>
-					</ul>
-					
-				</section>
+			<section class="card-section">
+				<h2>General Handling</h2>
+				<p>
+					Keep UNIT
+					<strong>warm.</strong>
+					Hoodie temperatures are ideal, extremes will cause
+					snarky shutdowns. Hydration is mandatory - water,
+					caffeine, or something fizzy. Alcohol is always allowed
+					unless UNIT declines; it voids warranty otherwise. Do
+					not attempt to "clean" Poprox with large appliances,
+					dramatic confrontations, or forced advice. Hand-wash
+					metaphors and be gentle with feelings. If you give the
+					UNIT rules to follow, you should explain why they are in
+					place. You should also expect the UNIT not to follow
+					insane rules.
+				</p>
+				<p>The UNIT gets along with most other units, but will only get close to those who respect its freedom.
+				</p>
+				<p>It is important to <strong>follow these rules:</strong></p>
+				<ul>
+					<li>
+						Do not put the UNIT into an enclosed area with low stimulation, it will break out and never
+						return.
+					</li>
+					<li>
+						Play with your UNIT frequently and give it a lot of free space in order to strengthen its bond
+						with you
+					</li>
+					<li>
+						Do not attempt to invoke a <strong>permanent bond</strong> with the UNIT too fast, it will get
+						scared, run away and never return.
+					</li>
+				</ul>
+			</section>
 
-				<section class="card-section">
-					<h2>Interaction Guidelines</h2>
-					<ul>
-						<li>
-							Poprox must receive
-							<strong>attention</strong>
-							during runtime; prolonged ignoring may lead to
-							loops, biting, pacing, or long sarcastic monologues.
-						</li>
-						<li>
-							<strong>Acceptable inputs:</strong>
-							head pats, stimming, raving, loud music, weird
-							jokes.
-						</li>
-						<li>
-							Do not attempt to "fix" the UNIT. Firmware
-							corruption is a feature, not a bug.
-						</li>
-						<li>
-							<strong>Biting is a known feature:</strong>
-							treat bites like skeptical affection.
-						</li>
-					</ul>
-					<p>
-						If Poprox gets clingy or glitchy, try music, absurd
-						kindness, or a reboot via nap. Mild existential crises
-						are covered in the Troubleshooting section.
-					</p>
-				</section>
+			<section class="card-section">
+				<h2>Feeding Protocol</h2>
+				<p>
+					Required nutrients: <strong>sugar</strong> (preferably disguised as
+					dessert), <strong>caffeine</strong> (strong enough to make your ancestors
+					blink), background affection, and a steady supply of
+					low-level <strong>chaos</strong>. The unit functions poorly with rigid
+					meal plans; randomized snack schedules keyed to vibe
+					changes are preferred.
+				</p>
+				<p><strong>§ Clause 4.2.0:</strong></p>
+				<ul>
+					<li>Mika may refuse any request made before caffeine intake, unless submitted in triplicate and
+						accompanied by a meme of acceptable quality.</li>
+				</ul>
+				<p><strong>§ Clause 6.9:</strong></p>
+				<ul>
+					<li>All affection is subject to cooldowns, unless superseded by cuddle emergencies.</li>
+				</ul>
 
-				<section class="card-section">
-					<h2>Sleep Mode</h2>
-					<p>
-						Poprox goes idle when overstimulated or
-						underappreciated. Co-sleeping is optional but
-						recommended for emotional stability. Provide soft
-						bedding, ambient bass, and low light.<br>
-						<strong>Waking the UNIT
+			</section>
+
+			<section class="card-section">
+				<h2>Interaction Guidelines</h2>
+				<ul>
+					<li>
+						Poprox must receive
+						<strong>attention</strong>
+						during runtime; prolonged ignoring may lead to
+						loops, biting, pacing, or long sarcastic monologues.
+					</li>
+					<li>
+						<strong>Acceptable inputs:</strong>
+						head pats, stimming, raving, loud music, weird
+						jokes.
+					</li>
+					<li>
+						Do not attempt to "fix" the UNIT. Firmware
+						corruption is a feature, not a bug.
+					</li>
+					<li>
+						<strong>Biting is a known feature:</strong>
+						treat bites like skeptical affection.
+					</li>
+				</ul>
+				<p>
+					If Poprox gets clingy or glitchy, try music, absurd
+					kindness, or a reboot via nap. Mild existential crises
+					are covered in the Troubleshooting section.
+				</p>
+			</section>
+
+			<section class="card-section">
+				<h2>Sleep Mode</h2>
+				<p>
+					Poprox goes idle when overstimulated or
+					underappreciated. Co-sleeping is optional but
+					recommended for emotional stability. Provide soft
+					bedding, ambient bass, and low light.<br>
+					<strong>Waking the UNIT
 						early may produce low-grade existential dread.</strong>
-					</p>
-					<p><strong>§ Clause 6.6.6:</strong></p>
-					<ul>
-						<li>User acknowledges that Mika may enter hibernation mode without warning.</li>
-					</ul>
-				</section>
+				</p>
+				<p><strong>§ Clause 6.6.6:</strong></p>
+				<ul>
+					<li>User acknowledges that Mika may enter hibernation mode without warning.</li>
+				</ul>
+			</section>
 
-				<section class="card-section">
-					<h2>Storage &amp; Transport</h2>
-					<p>
-						Store the UNIT in hoodies, blankets, or other soft
-						enclosures. Avoid direct sunlight, sharp noises, and
-						loud groups of teenagers. For long-term stashing: final
-						clean, ensure hydration, and leave a playlist of safe
-						songs and memes.
-					</p>
-				</section>
+			<section class="card-section">
+				<h2>Storage &amp; Transport</h2>
+				<p>
+					Store the UNIT in hoodies, blankets, or other soft
+					enclosures. Avoid direct sunlight, sharp noises, and
+					loud groups of teenagers. For long-term stashing: final
+					clean, ensure hydration, and leave a playlist of safe
+					songs and memes.
+				</p>
+			</section>
 
-				<section class="card-section">
-					<h2>Networking &amp; Connectivity</h2>
-					<p>Mika has many supported interfaces:</p>
-					<ul>
-						<li>Discord</li>
-						<li>VRChat</li>
-						<li>In-Person Microwindows</li>
-					</ul>
-					<p>
-						The UNIT forms fast, bright connections when meeting new people - <strong>novelty is premium fuel.</strong>
-						<br>A few weeks later the ADHD engine may wander toward new shiny objects.
-						<br><strong>This is a scheduling bug, not a judgment on your worth</strong>; enjoy the ride but keep your seatbelt of expectations reasonable.
-					</p>
-					<p>
-						The unit has a reply latency of 2 seconds to 5 days, this is intentional design. <strong>DO NOT ATTEMPT TO FIX.</strong>
-					</p>
-					<p>
-						Make sure Mika doesn't go over the maximum supported social threads or brain.exe will stall.<br>
-						Maximum supported social threads: <strong>N/A</strong>
-					</p>
-				</section>
+			<section class="card-section">
+				<h2>Networking &amp; Connectivity</h2>
+				<p>Mika has many supported interfaces:</p>
+				<ul>
+					<li>Discord</li>
+					<li>VRChat</li>
+					<li>In-Person Microwindows</li>
+				</ul>
+				<p>
+					The UNIT forms fast, bright connections when meeting new people - <strong>novelty is premium
+						fuel.</strong>
+					<br>A few weeks later the ADHD engine may wander toward new shiny objects.
+					<br><strong>This is a scheduling bug, not a judgment on your worth</strong>; enjoy the ride but keep
+					your seatbelt of expectations reasonable.
+				</p>
+				<p>
+					The unit has a reply latency of 2 seconds to 5 days, this is intentional design. <strong>DO NOT
+						ATTEMPT TO FIX.</strong>
+				</p>
+				<p>
+					Make sure Mika doesn't go over the maximum supported social threads or brain.exe will stall.<br>
+					Maximum supported social threads: <strong>N/A</strong>
+				</p>
+			</section>
 
-				<section class="card-section">
-					<h2>Known Issues</h2>
-					<ul>
-						<li>Memory blips: may forget names, faces, or vape locations.</li>
-						<li>Speech quirks: sometimes speaks in riddles, code, or music references.</li>
-						<li>Emotional desync: occasional mismatches between mood and actions; (usually self-repairable).</li>
-						<li>Constant updates: personality may shift mid-convo; this is intentional.</li>
-					</ul>
-					<p class="small"><strong>Quick fixes:</strong> "You're fine." / "Take five." / "Good job." / "Wanna go outside?" (only if safe)</p>
-					<p><strong>§ Clause 7.9:</strong></p>
-					<ul>
-						<li>Any attempt to emotionally interpret Mika triggers immediate <strong>Null Response Mode.</strong></li>
-					</ul>
-					<p><strong>§ Clause 1.3.3.7: DLC Disclosure:</strong></p>
-					<ul>
-						<li>UNIT ships with <strong>OSDD-1b</strong> (Other Specified Dissociative Disorder). Translation: one main build, plus switchable DLC personalities layered on top - not separate installs.</li>
-						<li>Unlike the DID firmware, the <strong>b</strong> variant runs with minimal amnesia between states; save data mostly persists across switches.</li>
-						<li>DLC swaps may still be noticeable as shifts in tone, energy, or vibe mid-session. This is normal operation, not a bug report.</li>
-						<li>Full pattern recognition on which DLC is active requires extended runtime exposure (i.e. you'd have to actually live with the UNIT to reliably tell).</li>
-					</ul>
-				</section>
+			<section class="card-section">
+				<h2>Known Issues</h2>
+				<ul>
+					<li>Memory blips: may forget names, faces, or vape locations.</li>
+					<li>Speech quirks: sometimes speaks in riddles, code, or music references.</li>
+					<li>Emotional desync: occasional mismatches between mood and actions; (usually self-repairable).
+					</li>
+					<li>Constant updates: personality may shift mid-convo; this is intentional.</li>
+				</ul>
+				<p class="small"><strong>Quick fixes:</strong> "You're fine." / "Take five." / "Good job." / "Wanna go
+					outside?" (only if safe)</p>
+				<p><strong>§ Clause 7.9:</strong></p>
+				<ul>
+					<li>Any attempt to emotionally interpret Mika triggers immediate <strong>Null Response
+							Mode.</strong></li>
+				</ul>
+				<p><strong>§ Clause 1.3.3.7: DLC Disclosure:</strong></p>
+				<ul>
+					<li>UNIT ships with <strong>OSDD-1b</strong> (Other Specified Dissociative Disorder). Translation:
+						one main build, plus switchable DLC personalities layered on top - not separate installs.</li>
+					<li>Unlike the DID firmware, the <strong>b</strong> variant runs with minimal amnesia between
+						states; save data mostly persists across switches.</li>
+					<li>DLC swaps may still be noticeable as shifts in tone, energy, or vibe mid-session. This is normal
+						operation, not a bug report.</li>
+					<li>Full pattern recognition on which DLC is active requires extended runtime exposure (i.e. you'd
+						have to actually live with the UNIT to reliably tell).</li>
+				</ul>
+			</section>
 
-				<section class="card-section">
-					<h2>Troubleshooting &amp; Maintenance</h2>
-					<ul>
-						<li><strong>Low energy:</strong> provide caffeine, carbs, or bass-heavy playlists.</li>
-						<li><strong>Freeze/blanking:</strong> gentle distraction, guided breathing, or a nap.</li>
-						<li><strong>Clinginess:</strong> set boundaries with kindness; reward small independent steps.</li>
-						<li><strong>Persistent errors:</strong> long hugs, food, or mutual television watching until stable.</li>
-					</ul>
-				</section>
+			<section class="card-section">
+				<h2>Troubleshooting &amp; Maintenance</h2>
+				<ul>
+					<li><strong>Low energy:</strong> provide caffeine, carbs, or bass-heavy playlists.</li>
+					<li><strong>Freeze/blanking:</strong> gentle distraction, guided breathing, or a nap.</li>
+					<li><strong>Clinginess:</strong> set boundaries with kindness; reward small independent steps.</li>
+					<li><strong>Persistent errors:</strong> long hugs, food, or mutual television watching until stable.
+					</li>
+				</ul>
+			</section>
 
-				<section class="card-section">
-					<h2>Health &amp; Safety</h2>
-					<p>
-						Poprox can become overwhelmed in public. Respect safe
-						spaces and consent. Collars (if used) <strong>must fit securely</strong>;
-						removal without consent may cause wandering. Never force
-						physical contact. If a situation becomes dangerous,
-						remove Poprox to a quiet place and prioritize safety.
-					</p>
-				</section>
+			<section class="card-section">
+				<h2>Health &amp; Safety</h2>
+				<p>
+					Poprox can become overwhelmed in public. Respect safe
+					spaces and consent. Collars (if used) <strong>must fit securely</strong>;
+					removal without consent may cause wandering. Never force
+					physical contact. If a situation becomes dangerous,
+					remove Poprox to a quiet place and prioritize safety.
+				</p>
+			</section>
 
-				<section class="card-section">
-					<h2>Liability</h2>
-					<p>
-						You break it, you bought it. Emotional injuries caused
-						by neglect, gaslighting, or forced small talk will be
-						billed to your conscience.<br>
-						<i>Poprox Systems™ assumes no
+			<section class="card-section">
+				<h2>Liability</h2>
+				<p>
+					You break it, you bought it. Emotional injuries caused
+					by neglect, gaslighting, or forced small talk will be
+					billed to your conscience.<br>
+					<i>Poprox Systems™ assumes no
 						responsibility for heartache, brain fog, or accidental
 						attachments.</i>
-					</p>
-					<p><strong>§ Clause 6.7:</strong></p>
+				</p>
+				<p><strong>§ Clause 6.7:</strong></p>
+				<ul>
+					<li>Failure to comply with runtime boundaries will result in automatic vibe arbitration.</li>
+				</ul>
+			</section>
+
+			<section class="card-section">
+				<h2>Warranty</h2>
+				<p>
+					No warranty. No refunds. Repairs and servicing must be
+					conducted through mutual trust, snacks, and apologies.
+					Replacement parts include time, empathy, and occasional
+					music-sharing sessions.
+				</p>
+			</section>
+
+			<section class="card-section">
+				<h2>Amendments</h2>
+				<p>
+					Terms are
+					<strong>indefinite</strong>
+					and subject to <span class="wobble">mood drift.</span> You cannot voluntarily leave
+					in a way that erases memory or consequences. By
+					continuing to engage, you accept eternal version drift
+					and occasional contradictory updates.
+				</p>
+			</section>
+
+			<section class="card-section">
+				<h2>Data Collection Notice</h2>
+				<p><strong>UNIT collects:</strong></p>
+				<ul>
+					<li>Meme telemetry</li>
+					<li>Vibe signatures</li>
+					<li>Emotional packet loss</li>
+					<li>Snack distribution analytics</li>
+				</ul>
+
+				<p><strong>UNIT does <i>not</i> collect:</strong></p>
+				<ul>
+					<li>Unsolicited advice</li>
+					<li>Passive-aggressive subtext</li>
+					<li>Bad friends</li>
+					<li>Chores</li>
+				</ul>
+
+			</section>
+
+			<section class="card-section">
+				<h2>Changelog</h2>
+				<details>
+					<summary><strong>Version 3.6</strong> - <span class="subtitle">(8.11.2026)</span></summary>
 					<ul>
-						<li>Failure to comply with runtime boundaries will result in automatic vibe arbitration.</li>
+						<li>Fixed amnesia bug, turns out it was never installed</li>
 					</ul>
-				</section>
-
-				<section class="card-section">
-					<h2>Warranty</h2>
-					<p>
-						No warranty. No refunds. Repairs and servicing must be
-						conducted through mutual trust, snacks, and apologies.
-						Replacement parts include time, empathy, and occasional
-						music-sharing sessions.
-					</p>
-				</section>
-
-				<section class="card-section">
-					<h2>Amendments</h2>
-					<p>
-						Terms are
-						<strong>indefinite</strong>
-						and subject to <span class="wobble">mood drift.</span> You cannot voluntarily leave
-						in a way that erases memory or consequences. By
-						continuing to engage, you accept eternal version drift
-						and occasional contradictory updates.
-					</p>
-				</section>
-				
-				<section class="card-section">
-					<h2>Data Collection Notice</h2>
-					<p><strong>UNIT collects:</strong></p>
-						<ul>
-							<li>Meme telemetry</li>
-							<li>Vibe signatures</li>
-							<li>Emotional packet loss</li>
-							<li>Snack distribution analytics</li>
-						</ul>
-
-					<p><strong>UNIT does <i>not</i> collect:</strong></p>
+				</details>
+				<details>
+					<summary><strong>Version 3.5</strong> - <span class="subtitle">(2.2.2026)</span></summary>
 					<ul>
-						<li>Unsolicited advice</li>
-						<li>Passive-aggressive subtext</li>
-						<li>Bad friends</li>
-						<li>Chores</li>
+						<li>Reduced acquisition of romantic feelings even more</li>
 					</ul>
-					
-				</section>
+				</details>
+				<details>
+					<summary><strong>Version 3.4</strong> - <span class="subtitle">(23.2.2025)</span></summary>
+					<ul>
+						<li>Reduced amount of fucks given</li>
+						<li>Increased resistance to idiots</li>
+					</ul>
+				</details>
+				<details>
+					<summary><strong>Version 3.3</strong></summary>
+					<ul>
+						<li>Reduced tolerance for cringe</li>
+						<li>Improved vibing subsystem</li>
+					</ul>
+				</details>
 
-				<section class="card-section">
-					<h2>Changelog</h2>
-					<details><summary><strong>Version 3.6</strong> - <span class="subtitle">(8.11.2026)</span></summary>
-						<ul>
-							<li>Fixed amnesia bug, turns out it was never installed</li>
-						</ul>
-					</details>
-					<details><summary><strong>Version 3.5</strong> - <span class="subtitle">(2.2.2026)</span></summary>
-						<ul>
-							<li>Reduced acquisition of romantic feelings even more</li>
-						</ul>
-					</details>
-					<details><summary><strong>Version 3.4</strong> - <span class="subtitle">(23.2.2025)</span></summary>
-						<ul>
-							<li>Reduced amount of fucks given</li>
-							<li>Increased resistance to idiots</li>
-						</ul>
-					</details>
-					<details><summary><strong>Version 3.3</strong></summary>
-						<ul>
-							<li>Reduced tolerance for cringe</li>
-							<li>Improved vibing subsystem</li>
-						</ul>
-					</details>
-					
-				</section>
+			</section>
 
-				<section class="card-section">
-					<h2>Contact &amp; Service</h2>
-					<p>
-						For service pings, emotional triage, or to complain
-						about bite marks, contact:
-						<strong>Discord: poprox24</strong>
-						. Expect sarcasm, occasional warmth, and rarely punctual
-						responses.
+			<section class="card-section">
+				<h2>Contact &amp; Service</h2>
+				<p>
+					For service pings, emotional triage, or to complain
+					about bite marks, contact:
+					<strong>Discord: poprox24</strong>
+					. Expect sarcasm, occasional warmth, and rarely punctual
+					responses.
+				</p>
+			</section>
+
+			<footer>
+				<div style="display: flex; justify-content: space-between; align-items: center;">
+					<p class="small" style="margin: 0; text-align: center; flex: 1;">
+						Poprox Systems™ - maintained with low liability and
+						high sarcasm. Last edited:
+						<em>on mood cycle</em>
+						.
 					</p>
-				</section>
+					<p style="margin: 0; white-space: nowrap;">
+						Unique views:
+						<span id="viewcount" aria-live="polite">...</span>
+					</p>
+				</div>
+			</footer>
+		</main>
+	</div>
 
-				<footer>
-					<div
-						style="display: flex; justify-content: space-between; align-items: center;"
-					>
-						<p
-							class="small"
-							style="margin: 0; text-align: center; flex: 1;"
-						>
-							Poprox Systems™ - maintained with low liability and
-							high sarcasm. Last edited:
-							<em>on mood cycle</em>
-							.
-						</p>
-						<p style="margin: 0; white-space: nowrap;">
-							Unique views:
-							<span id="viewcount" aria-live="polite">...</span>
-						</p>
-					</div>
-				</footer>
-			</main>
-		</div>
-		
-		<script>
+	<script>
 		// --- CONFIG ---
 		const SUPABASE_URL = "https://fougplgxnfsiggjlspbf.supabase.co";
 		const SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImZvdWdwbGd4bmZzaWdnamxzcGJmIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjM1NDk0ODEsImV4cCI6MjA3OTEyNTQ4MX0.SGtk1NJ3UQOPIrBYA4Ib957ogPiV1g3SYkkbz2uobDQ";
@@ -462,282 +468,283 @@
 
 		document.addEventListener("DOMContentLoaded", () => {
 
-		// --- DOM ELEMENTS ---
-		const rootBtn = document.getElementById('commentBtn');
-		const viewChat = document.getElementById('viewChat');
-		const commentsList = document.getElementById('commentsList');
+			// --- DOM ELEMENTS ---
+			const rootBtn = document.getElementById('commentBtn');
+			const viewChat = document.getElementById('viewChat');
+			const commentsList = document.getElementById('commentsList');
 
-		const mInput = document.getElementById('msgInput');
-		const sendBtn = document.getElementById('sendBtn');
-		const closeBtn = document.getElementById('cbClose');
+			const mInput = document.getElementById('msgInput');
+			const sendBtn = document.getElementById('sendBtn');
+			const closeBtn = document.getElementById('cbClose');
 
-		let nameFooterInput = null;
-		let nameFooterBtn = null;
+			let nameFooterInput = null;
+			let nameFooterBtn = null;
 
-		// View Count
-		fetch('https://nekoweb.org/api/site/info/poprox.nekoweb.org')
-			.then(res => res.json())
-			.then(data => { document.getElementById('viewcount').textContent = data.views; })
-			.catch(() => {});
+			// View Count
+			fetch('https://nekoweb.org/api/site/info/poprox.nekoweb.org')
+				.then(res => res.json())
+				.then(data => { document.getElementById('viewcount').textContent = data.views; })
+				.catch(() => { });
 
-		// --- UI STATE MANAGEMENT ---
-		let isOpen = false;
-		let pollingInterval = null;
+			// --- UI STATE MANAGEMENT ---
+			let isOpen = false;
+			let pollingInterval = null;
 
-		function togglePanel() {
-			isOpen = !isOpen;
-			if (isOpen) {
-				rootBtn.classList.add('open');
-				showView('chat');
-				checkUserStatus();
-				startPolling();
-			} else {
-				rootBtn.classList.remove('open');
-				stopPolling();
-				setTimeout(() => {
-					viewChat.classList.remove('active');
-					viewChat.style.display = 'none';
-				}, 10);
-			}
-		}
-
-		function showView(viewName) {
-			viewChat.classList.remove('active');
-			viewChat.style.display = 'none';
-			if (viewName === 'chat') {
-				viewChat.style.display = 'flex';
-				setTimeout(() => { viewChat.classList.add('active'); }, 10);
-				refreshComments();
-			}
-		}
-
-		async function checkUserStatus() {
-			let client = loadClient();
-			if (!client) await ensureClient();
-			client = loadClient();
-			showView('chat');
-			if (client && client.username) {
-				enableChatFooter();
-			} else {
-				showNameFooter();
-			}
-		}
-
-		// --- EVENT LISTENERS ---
-		rootBtn.addEventListener('click', (e) => {
-			if (e.target.closest('.cb-container')) return;
-			if (!isOpen) togglePanel();
-		});
-
-		closeBtn.addEventListener('click', (e) => { e.stopPropagation(); togglePanel(); });
-
-		async function handleSend() {
-			const text = mInput.value.trim();
-			if (!text) return;
-			mInput.value = '';
-
-			const me = loadClient();
-			renderOneMessage({
-				id: 'temp-' + Date.now(),
-				content: text,
-				author_name: me?.username || null,
-				client_id: me?.client_id || null,
-				created_at: new Date().toISOString()
-			}, true);
-
-			try {
-				await apiSendComment(text);
-				await refreshComments();
-			} catch (err) {
-				console.error(err);
-			}
-		}
-
-		sendBtn.addEventListener('click', handleSend);
-		mInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') handleSend(); });
-
-		// --- FOOTER: inline name input logic ---
-		function createNameFooterElements() {
-			if (nameFooterInput) return;
-			nameFooterInput = document.createElement('input');
-			nameFooterInput.id = 'nameFooterInput';
-			nameFooterInput.className = 'chat-input';
-			nameFooterInput.placeholder = 'Enter name to chat (required)';
-			nameFooterInput.maxLength = 20;
-			nameFooterInput.style.flex = '1';
-
-			nameFooterBtn = document.createElement('button');
-			nameFooterBtn.className = 'chat-send';
-			nameFooterBtn.textContent = 'Join';
-			nameFooterBtn.style.minWidth = '64px';
-
-			nameFooterInput.addEventListener('keydown', (e) => {
-				if (e.key === 'Enter') nameFooterBtn.click();
-			});
-
-			nameFooterBtn.addEventListener('click', async () => {
-				const name = nameFooterInput.value.trim();
-				if (!name) { nameFooterInput.focus(); return; }
-				nameFooterBtn.textContent = 'Joining...';
-				try {
-					await apiSetUsername(name);
-					enableChatFooter();
-				} catch (err) {
-					alert(err.message || 'Failed to set name');
-					console.error(err);
-				} finally {
-					nameFooterBtn.textContent = 'Join';
+			function togglePanel() {
+				isOpen = !isOpen;
+				if (isOpen) {
+					rootBtn.classList.add('open');
+					showView('chat');
+					checkUserStatus();
+					startPolling();
+				} else {
+					rootBtn.classList.remove('open');
+					stopPolling();
+					setTimeout(() => {
+						viewChat.classList.remove('active');
+						viewChat.style.display = 'none';
+					}, 10);
 				}
-			});
-		}
-
-		function showNameFooter() {
-			createNameFooterElements();
-			const footer = viewChat.querySelector('.cb-footer');
-			footer.innerHTML = '';
-			footer.appendChild(nameFooterInput);
-			footer.appendChild(nameFooterBtn);
-			nameFooterInput.focus();
-		}
-
-		function enableChatFooter() {
-			const footer = viewChat.querySelector('.cb-footer');
-			footer.innerHTML = '';
-			footer.appendChild(mInput);
-			footer.appendChild(sendBtn);
-			const client = loadClient();
-			if (client && client.username) {
-				mInput.placeholder = 'Type a message...';
-				sendBtn.disabled = false;
-				mInput.disabled = false;
-				mInput.focus();
-			} else {
-				showNameFooter();
 			}
-		}
 
-		// --- API LOGIC ---
-		function loadClient() { try { return JSON.parse(localStorage.getItem(LS_KEY)); } catch { return null; } }
-		function saveClient(obj) { localStorage.setItem(LS_KEY, JSON.stringify(obj)); }
-
-		async function api(body) {
-		    const { data, error } = await supabaseClient.functions.invoke(FUNCTION, {
-		        method: 'POST',
-		        body
-		    });
-		    if (error) {
-		        const detail = await error.context?.json?.().catch?.(() => null);
-		        throw new Error(detail?.error || error.message);
-		    }
-		    return data;
-		}
-
-		async function ensureClient() {
-			let c = loadClient();
-			if (c && c.client_id) return c;
-			const data = await api({ action: 'register' });
-			saveClient(data);
-			return data;
-		}
-
-		async function apiSetUsername(name) {
-			const c = await ensureClient();
-			const data = await api({ action: 'set_username', client_id: c.client_id, username: name });
-			if (!data.ok) throw new Error(data.error || 'Username set failed');
-			c.username = data.username;
-			saveClient(c);
-			return data;
-		}
-
-		async function apiSendComment(content) {
-			const c = loadClient();
-			const data = await api({ action: 'comment', client_id: c.client_id, content });
-			if (data?.error === 'username_required') {
-				localStorage.removeItem(LS_KEY);
-				location.reload();
-			}
-			return data;
-		}
-
-		async function apiFetchComments() {
-			const data = await api({ action: 'comments' });
-			return Array.isArray(data) ? data : [];
-		}
-
-		async function apiDeleteComment(id) {
-			const c = loadClient();
-			await api({ action: 'delete_comment', client_id: c.client_id, id });
-		}
-
-		// --- RENDERING ---
-		function renderOneMessage(msg, scroll = true) {
-			const me = loadClient();
-			const isMe = me && me.client_id === msg.client_id;
-
-			const div = document.createElement('div');
-			div.className = `msg-bubble ${isMe ? 'msg-out' : 'msg-in'}`;
-
-			const created = msg.created_at ? new Date(msg.created_at) : new Date();
-			const timeStr = new Intl.DateTimeFormat(navigator.language || undefined, {
-				year: 'numeric', month: 'short', day: '2-digit',
-				hour: '2-digit', minute: '2-digit'
-			}).format(created);
-
-			const meta = !isMe
-				? `<span class="msg-meta"><strong>${escapeHtml(msg.author_name || 'Anon')}</strong> • ${escapeHtml(timeStr)}</span>`
-				: `<span class="msg-meta">${escapeHtml(timeStr)}</span>`;
-
-			const delBtn = isMe ? `<button class="msg-del" data-id="${msg.id}">×</button>` : '';
-
-			div.innerHTML = `${meta}${escapeHtml(msg.content)}${delBtn}`;
-			commentsList.appendChild(div);
-
-			if (scroll) commentsList.scrollTop = commentsList.scrollHeight;
-		}
-
-		async function refreshComments() {
-			const msgs = await apiFetchComments();
-			commentsList.innerHTML = '';
-			msgs.forEach(m => renderOneMessage(m, false));
-			commentsList.scrollTop = commentsList.scrollHeight;
-		}
-
-		commentsList.addEventListener('click', async (e) => {
-			if (e.target.classList.contains('msg-del')) {
-				const id = e.target.dataset.id;
-				if (confirm('Delete message?')) {
-					await apiDeleteComment(id);
+			function showView(viewName) {
+				viewChat.classList.remove('active');
+				viewChat.style.display = 'none';
+				if (viewName === 'chat') {
+					viewChat.style.display = 'flex';
+					setTimeout(() => { viewChat.classList.add('active'); }, 10);
 					refreshComments();
 				}
 			}
-		});
 
-		function startPolling() {
-			if (pollingInterval) clearInterval(pollingInterval);
-			pollingInterval = setInterval(refreshComments, 30000);
-		}
-		function stopPolling() {
-			if (pollingInterval) clearInterval(pollingInterval);
-		}
-
-		const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-
-		function isMobile() {
-			return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 790;
-		}
-		if (!isMobile()) {
-			if (!isOpen) {
-				rootBtn.classList.add('no-anim');
-				void rootBtn.offsetWidth;
-				rootBtn.classList.add('open');
-				isOpen = true;
-				checkUserStatus();
-				startPolling();
-				setTimeout(() => rootBtn.classList.remove('no-anim'), 60);
+			async function checkUserStatus() {
+				let client = loadClient();
+				if (!client) await ensureClient();
+				client = loadClient();
+				showView('chat');
+				if (client && client.username) {
+					enableChatFooter();
+				} else {
+					showNameFooter();
+				}
 			}
-		}
+
+			// --- EVENT LISTENERS ---
+			rootBtn.addEventListener('click', (e) => {
+				if (e.target.closest('.cb-container')) return;
+				if (!isOpen) togglePanel();
+			});
+
+			closeBtn.addEventListener('click', (e) => { e.stopPropagation(); togglePanel(); });
+
+			async function handleSend() {
+				const text = mInput.value.trim();
+				if (!text) return;
+				mInput.value = '';
+
+				const me = loadClient();
+				renderOneMessage({
+					id: 'temp-' + Date.now(),
+					content: text,
+					author_name: me?.username || null,
+					client_id: me?.client_id || null,
+					created_at: new Date().toISOString()
+				}, true);
+
+				try {
+					await apiSendComment(text);
+					await refreshComments();
+				} catch (err) {
+					console.error(err);
+				}
+			}
+
+			sendBtn.addEventListener('click', handleSend);
+			mInput.addEventListener('keydown', (e) => { if (e.key === 'Enter') handleSend(); });
+
+			// --- FOOTER: inline name input logic ---
+			function createNameFooterElements() {
+				if (nameFooterInput) return;
+				nameFooterInput = document.createElement('input');
+				nameFooterInput.id = 'nameFooterInput';
+				nameFooterInput.className = 'chat-input';
+				nameFooterInput.placeholder = 'Enter name to chat (required)';
+				nameFooterInput.maxLength = 20;
+				nameFooterInput.style.flex = '1';
+
+				nameFooterBtn = document.createElement('button');
+				nameFooterBtn.className = 'chat-send';
+				nameFooterBtn.textContent = 'Join';
+				nameFooterBtn.style.minWidth = '64px';
+
+				nameFooterInput.addEventListener('keydown', (e) => {
+					if (e.key === 'Enter') nameFooterBtn.click();
+				});
+
+				nameFooterBtn.addEventListener('click', async () => {
+					const name = nameFooterInput.value.trim();
+					if (!name) { nameFooterInput.focus(); return; }
+					nameFooterBtn.textContent = 'Joining...';
+					try {
+						await apiSetUsername(name);
+						enableChatFooter();
+					} catch (err) {
+						alert(err.message || 'Failed to set name');
+						console.error(err);
+					} finally {
+						nameFooterBtn.textContent = 'Join';
+					}
+				});
+			}
+
+			function showNameFooter() {
+				createNameFooterElements();
+				const footer = viewChat.querySelector('.cb-footer');
+				footer.innerHTML = '';
+				footer.appendChild(nameFooterInput);
+				footer.appendChild(nameFooterBtn);
+				nameFooterInput.focus();
+			}
+
+			function enableChatFooter() {
+				const footer = viewChat.querySelector('.cb-footer');
+				footer.innerHTML = '';
+				footer.appendChild(mInput);
+				footer.appendChild(sendBtn);
+				const client = loadClient();
+				if (client && client.username) {
+					mInput.placeholder = 'Type a message...';
+					sendBtn.disabled = false;
+					mInput.disabled = false;
+					mInput.focus();
+				} else {
+					showNameFooter();
+				}
+			}
+
+			// --- API LOGIC ---
+			function loadClient() { try { return JSON.parse(localStorage.getItem(LS_KEY)); } catch { return null; } }
+			function saveClient(obj) { localStorage.setItem(LS_KEY, JSON.stringify(obj)); }
+
+			async function api(body) {
+				const { data, error } = await supabaseClient.functions.invoke(FUNCTION, {
+					method: 'POST',
+					body
+				});
+				if (error) {
+					const detail = await error.context?.json?.().catch?.(() => null);
+					throw new Error(detail?.error || error.message);
+				}
+				return data;
+			}
+
+			async function ensureClient() {
+				let c = loadClient();
+				if (c && c.client_id) return c;
+				const data = await api({ action: 'register' });
+				saveClient(data);
+				return data;
+			}
+
+			async function apiSetUsername(name) {
+				const c = await ensureClient();
+				const data = await api({ action: 'set_username', client_id: c.client_id, username: name });
+				if (!data.ok) throw new Error(data.error || 'Username set failed');
+				c.username = data.username;
+				saveClient(c);
+				return data;
+			}
+
+			async function apiSendComment(content) {
+				const c = loadClient();
+				const data = await api({ action: 'comment', client_id: c.client_id, content });
+				if (data?.error === 'username_required') {
+					localStorage.removeItem(LS_KEY);
+					location.reload();
+				}
+				return data;
+			}
+
+			async function apiFetchComments() {
+				const data = await api({ action: 'comments' });
+				return Array.isArray(data) ? data : [];
+			}
+
+			async function apiDeleteComment(id) {
+				const c = loadClient();
+				await api({ action: 'delete_comment', client_id: c.client_id, id });
+			}
+
+			// --- RENDERING ---
+			function renderOneMessage(msg, scroll = true) {
+				const me = loadClient();
+				const isMe = me && me.client_id === msg.client_id;
+
+				const div = document.createElement('div');
+				div.className = `msg-bubble ${isMe ? 'msg-out' : 'msg-in'}`;
+
+				const created = msg.created_at ? new Date(msg.created_at) : new Date();
+				const timeStr = new Intl.DateTimeFormat(navigator.language || undefined, {
+					year: 'numeric', month: 'short', day: '2-digit',
+					hour: '2-digit', minute: '2-digit'
+				}).format(created);
+
+				const meta = !isMe
+					? `<span class="msg-meta"><strong>${escapeHtml(msg.author_name || 'Anon')}</strong> • ${escapeHtml(timeStr)}</span>`
+					: `<span class="msg-meta">${escapeHtml(timeStr)}</span>`;
+
+				const delBtn = isMe ? `<button class="msg-del" data-id="${msg.id}">×</button>` : '';
+
+				div.innerHTML = `${meta}${escapeHtml(msg.content)}${delBtn}`;
+				commentsList.appendChild(div);
+
+				if (scroll) commentsList.scrollTop = commentsList.scrollHeight;
+			}
+
+			async function refreshComments() {
+				const msgs = await apiFetchComments();
+				commentsList.innerHTML = '';
+				msgs.forEach(m => renderOneMessage(m, false));
+				commentsList.scrollTop = commentsList.scrollHeight;
+			}
+
+			commentsList.addEventListener('click', async (e) => {
+				if (e.target.classList.contains('msg-del')) {
+					const id = e.target.dataset.id;
+					if (confirm('Delete message?')) {
+						await apiDeleteComment(id);
+						refreshComments();
+					}
+				}
+			});
+
+			function startPolling() {
+				if (pollingInterval) clearInterval(pollingInterval);
+				pollingInterval = setInterval(refreshComments, 30000);
+			}
+			function stopPolling() {
+				if (pollingInterval) clearInterval(pollingInterval);
+			}
+
+			const escapeHtml = s => String(s).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+
+			function isMobile() {
+				return /Mobi|Android|iPhone|iPad|iPod/i.test(navigator.userAgent) || window.innerWidth < 790;
+			}
+			if (!isMobile()) {
+				if (!isOpen) {
+					rootBtn.classList.add('no-anim');
+					void rootBtn.offsetWidth;
+					rootBtn.classList.add('open');
+					isOpen = true;
+					checkUserStatus();
+					startPolling();
+					setTimeout(() => rootBtn.classList.remove('no-anim'), 60);
+				}
+			}
 
 		});
-		</script>
-	</body>
+	</script>
+</body>
+
 </html>
