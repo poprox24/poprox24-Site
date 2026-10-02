@@ -1391,9 +1391,9 @@
 			let nameFooterBtn = null;
 
 			// View Count
-			fetch('https://nekoweb.org/api/site/info/poprox.nekoweb.org')
-				.then(res => res.json())
-				.then(data => { document.getElementById('viewcount').textContent = data.views; })
+			fetch('https://viewcount.hudec-matyas-2006.workers.dev/hit')
+				.then(res => res.text())
+				.then(n => { document.getElementById('viewcount').textContent = n; })
 				.catch(() => { /* ignore */ });
 
 			// --- UI STATE MANAGEMENT ---

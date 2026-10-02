@@ -1,0 +1,12 @@
+name = "viewcount"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[vars]
+ALLOWED_ORIGIN = "https://poprox24.stream"
+BASE = "668"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "viewcount"
+database_id = "3a977add-4d4c-4844-842e-339e8e59bc40"
